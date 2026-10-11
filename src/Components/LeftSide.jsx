@@ -1,5 +1,5 @@
 import './Main.css'
-import backgroundImage from './images/background.svg'
+import backgroundImage from './Images/background.svg'
 
 function LeftSide() {
     return (

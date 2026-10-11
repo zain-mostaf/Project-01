@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.mainPage {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #EFF5FF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 65%;
+        height: 70vh;
+
+        display: flex;
+        /* flex-direction: column; */
+        
+
+        gap: 10%;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+
+        .leftSide {
+            width: calc(30% - 2rem);;
+            height: calc(100% - 2rem);
+       
+            background-image: url('./images/background.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 15px;
+            margin: 1rem;
+            .steps {
+                /* margin-top: 3rem;
+                margin-left: 3rem; */
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                padding: 3rem 3.5rem;
+
+                .step {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2rem;
+                    .SpanNumaber {
+                        width: 25px;
+                        height: 25px;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        border: 2px solid #FFFFFF;
+                        border-radius: 50%;
+
+                        color: #FFFFFF;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                    }
+                    .stepText {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.2rem;
+
+                        .stepNumber {
+                            color: #B8B7FF;
+                            font-size: 0.9rem;
+                            font-weight: 600;
+                        }
+
+                        .stepTitle {
+                            color: #FFFFFF;
+                            font-size: 1rem;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                        }
+
+
+                    }
+
+                }
+
+            }
+        }
+
+        .rightSide {
+            width: 50%;
+            height: calc(100% - 3rem);
+            margin-top: 3rem;
+            /* background-color: blue; */
+
+            .headerSection {
+                font-family: 'Ubuntu', sans-serif;
+
+                .headerSection1 {
+                    font-size: 32px;
+                    font-weight: 700;
+                    font-style: normal;
+                    line-height: 120%;
+                    letter-spacing: 0;
+                }
+
+                .description {
+                    width: 500px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 150%;
+                    color: #9699AA;
+                    margin: 0;
+                }
+            }
+
+            .inputSection {
+                font-family: 'Ubuntu', sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                line-height: 120%;
+                letter-spacing: 0;
+                padding: 5rem;
+
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+
+                .inputGroup input {
+                    width: 100%;
+                    height: 48px;
+                    padding: 8px 16px;
+                    border: 1px solid #D6D9E6;
+                    border-radius: 8px;
+                    background-color: #FFFFFF;
+                    box-sizing: border-box;
+                    margin-top: 0.5rem;
+                }
+            }
+
+            .buttonSection {
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 2rem;
+
+                .nextButton {
+                    padding: 12px 20px;
+
+                    border: none;
+                    border-radius: 8px;
+
+                    background-color: #19315F;
+                    color: #FFFFFF;
+
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 120%;
+
+                    cursor: pointer;
+                }
+            }
+
+
+
+        }
+    }    
+}
+
